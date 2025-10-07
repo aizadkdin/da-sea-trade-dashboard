@@ -1,0 +1,15 @@
+/* Smooth transition for the sidebar collapse */
+#sidebar {
+  transition: max-width 0.4s ease, opacity 0.3s ease;
+  overflow: visible;
+}
+
+#sidebar.collapse.show {
+  max-width: 300px;  /* match your sidebar width */
+  opacity: 1;
+}
+
+#sidebar.collapse {
+  max-width: 0;
+  opacity: 0;
+}
